@@ -8,6 +8,6 @@
 ;===========================================
 */
 
-const header = require('../fulfs-header.js');
+const header = require('../fulfs-header.js'); // added file from root directory
 
-console.log(header.display("Perry", "Fulfs", "Exercise 2.2"));
+console.log(header.display("Perry", "Fulfs", "Exercise 2.2")); // updated content with actual name & assignment name
