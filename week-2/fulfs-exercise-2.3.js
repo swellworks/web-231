@@ -5,7 +5,7 @@
 ; Date:   30 October 2020
 ; Modified By: Perry Fulfs
 ; Description: function properties
-;===========================================
+===========================================
 */
 
 // start program
@@ -27,7 +27,7 @@ console.log(header.display("Perry", "Fulfs", "Exercise 2.3")); // updated conten
   refer to page 178 for implementing function properties
 */
 
-// add function properties here...
+// add function properties here
 firstName.perry = "Perry"; // Create a function property name with my real first name.
 lastName.fulfs = "Fulfs"; // Create a function property name with my real last name.
 
