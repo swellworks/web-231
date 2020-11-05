@@ -23,7 +23,7 @@
 
 const header = require('../fulfs-header.js'); // added file from root directory
 
-console.log(header.display("Perry", "Fulfs", "Exercise 3.2")); // updated content with actual name & assignment name
+console.log(header.display("Perry", "Fulfs", "Exercise 3.2")); //  content with actual name & assignment name
 
 // Variables for each functions output.
 testVar1="Truck";
@@ -93,19 +93,19 @@ console.log('\n'); // add space between output
  if (match(testVar1, testVar2)) { // Takes 2 variables to check for match/mismatch.
    logMatch(testVar1, testVar2);
  } else {
-   logMismatch(testVar1, testVar2);
+   logMismatch(testVar1, testVar2); // confirm that vars DON'T match
  }
 
  if (match(testVar3, testVar4)) { // Takes 2 variables to check for match/mismatch.
   logMatch(testVar3, testVar4);
 } else {
-  logMismatch(testVar3, testVar4);
+  logMismatch(testVar3, testVar4); // confirm that vars DO match
 }
 
 if (match(testVar5, testVar6)) { // Takes 2 variables to check for match/mismatch.
   logMatch(testVar5, testVar6);
 } else {
-  logMismatch(testVar5, testVar6);
+  logMismatch(testVar5, testVar6); // confirm that vars DON'T match
 }
 
 // end program
