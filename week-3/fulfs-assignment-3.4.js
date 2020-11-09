@@ -4,7 +4,7 @@
 ; Author: Perry Fulfs
 ; Date:   7 November 2020
 ; Modified By: Perry Fulfs
-; Description: how to build and invoke functions
+; Description: for loop outputting set number and match/mismatch of random number generated
 ===========================================
 */
 
