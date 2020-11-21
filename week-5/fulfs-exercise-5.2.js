@@ -33,9 +33,9 @@ console.log("\n") // adding a space between header & rest of code
 
 // start program
 
-var foods = ['Oysters', 'Shrimp', 'Steak', 'Tacos', 'Sushi'];
-foods.forEach(function(food) {
-    console.log(food)
+var foods = ['Oysters', 'Shrimp', 'Steak', 'Tacos', 'Sushi']; // Create array string of foods from expected output.
+foods.forEach(function(food) { // Use a forEach funtion to iterate over the collection.
+    console.log(food) // Output the foods in order keyed in.
 });
 
 // end program
