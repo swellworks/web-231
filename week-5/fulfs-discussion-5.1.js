@@ -2,7 +2,7 @@
 ============================================
 ; Title:  fulfs-discussion-5.1.js
 ; Author: Perry Fulfs
-; Date:   10 November 2020
+; Date:   18 November 2020
 ; Modified By: Perry Fulfs
 ; Description: create a simple JavaScript program using a 
 ; keyed collection array with at least two (2) errors
