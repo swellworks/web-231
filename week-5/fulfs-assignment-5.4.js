@@ -94,11 +94,27 @@ var composers = [ // Create array-like objects of first/last name, genre, rating
   }
 ]
 
-composers.forEach(function(composer) { // Use a forEach funtion to iterate over the collection.
-  console.log( // Output the results in order keyed in.
-    "Last Name: " + composer.lastName + ", Genre: " + composer.genre + ", Rating: " + composer.rating
-  );
-})
+// composers.forEach(function(composer) { // Use a forEach funtion to iterate over the collection.
+//   console.log( // Output the results in order keyed in.
+//     "Last Name: " + composer.lastName + ", Genre: " + composer.genre + ", Rating: " + composer.rating
+//   );
+// })
 
+
+let adjRatings = composers.map((rate, idx, lName) => { // Use a .map funtion to iterate over the collection.
+  let ratingsObj = { index: idx, rating: rate, lastName: lName};
+  return ratingsObj;
+});
+
+
+console.log("-- COMPOSER BY RATING --");
+console.log("Rating: " + composers.rating);
+console.log("Composer: " + composers.lastName);
+
+console.log("")
+
+console.log("-- COMPOSER BY GENRE --");
+console.log("Rating: " + composers.rating);
+console.log("Composer: " + composers.lastName);
 
 // end program
