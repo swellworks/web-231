@@ -101,6 +101,8 @@ let composers = [ // Create array-like objects of first/last name, genre, rating
 // })
 
 
+
+
 let rateName = composers.map(function (rater, index, array) { // Variable  .map to pull the rating of the composer
   return rater.rating;  // Function execution and specifies a value to be returned as rating
 });
@@ -108,16 +110,27 @@ let compName = composers.map(function (composer, index, array) { // Variable .ma
   return composer.lastName; // Function execution and specifies a value to be returned as last name
 });
 
-/* attempting to use forEach to break out as rating: then below lastName: */
-// Object.entries(rateName).forEach(entry => {
-//   const [key, value] = entry;
-//   console.log(key, value);
+/* SO CLOSE - I know what I want it to do... I can't see to wrap head around how to get them to fall in line */ 
+// rateName.forEach(function(rating) { 
+//   console.log(rating)
 // });
+// compName.forEach(function(lastName) { 
+//   console.log(lastName)
+// });
+/* 
+8
+10
+9
+6
+5
+Beethoven
+Mozart
+Bach
+Haydn
+Schubert
+*/
 
-// Object.entries(compName).forEach(entry => {
-//   const [key, value] = entry;
-//   console.log(value);
-// });
+console.log("")
 
 console.log("-- COMPOSER BY RATING --");
 console.log("Rating: " + rateName + "\n" + "Composer: " + compName); 
@@ -136,7 +149,33 @@ console.log("-- COMPOSER BY GENRE --");
 console.log("Genre: " + genreComp + "\n" + "Composer: " + compName);
 
 
+/* 
+I've tried for hours to get this to work out & I'm quite lost. 
+I'll set-up a time to go over this with assignment with you - 
+Need a walk through as I'm not grasping the predicate part - the book doesn't help at all
+and I've tried tons of different online sources.
+*/
+
 // end program
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Other type of code to output - didn't work. */
 // let adjRatings = composers.map((rate, idx, lName) => { // Use a .map funtion to iterate over the collection.
