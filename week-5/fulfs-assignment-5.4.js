@@ -61,7 +61,7 @@ console.log("\n") // adding a space between header & rest of code
 // start program
 
 // object collection
-var composers = [ // Create array-like objects of first/last name, genre, rating.
+let composers = [ // Create array-like objects of first/last name, genre, rating.
   {
     firstName: "Ludwig van",
     lastName: "Beethoven", 
@@ -101,20 +101,54 @@ var composers = [ // Create array-like objects of first/last name, genre, rating
 // })
 
 
-let adjRatings = composers.map((rate, idx, lName) => { // Use a .map funtion to iterate over the collection.
-  let ratingsObj = { index: idx, rating: rate, lastName: lName};
-  return ratingsObj;
+let rateName = composers.map(function (rater, index, array) { // Variable  .map to pull the rating of the composer
+  return rater.rating;  // Function execution and specifies a value to be returned as rating
+});
+let compName = composers.map(function (composer, index, array) { // Variable .map to pull the name of the
+  return composer.lastName; // Function execution and specifies a value to be returned as last name
 });
 
+/* attempting to use forEach to break out as rating: then below lastName: */
+// Object.entries(rateName).forEach(entry => {
+//   const [key, value] = entry;
+//   console.log(key, value);
+// });
+
+// Object.entries(compName).forEach(entry => {
+//   const [key, value] = entry;
+//   console.log(value);
+// });
 
 console.log("-- COMPOSER BY RATING --");
-console.log("Rating: " + composers.rating);
-console.log("Composer: " + composers.lastName);
+console.log("Rating: " + rateName + "\n" + "Composer: " + compName); 
+// Trying to output as
+// Rating: 8
+// Composer: Beethoven
+
+
+let genreComp = composers.map(function (genMusic, index, array) { // Use .map to pull the 
+  return genMusic.genre; // Function execution and specifies a value to be returned as genre
+});
 
 console.log("")
 
 console.log("-- COMPOSER BY GENRE --");
-console.log("Rating: " + composers.rating);
-console.log("Composer: " + composers.lastName);
+console.log("Genre: " + genreComp + "\n" + "Composer: " + compName);
+
 
 // end program
+
+/* Other type of code to output - didn't work. */
+// let adjRatings = composers.map((rate, idx, lName) => { // Use a .map funtion to iterate over the collection.
+//   let ratingsObj = { index: idx, rating: rate, lastName: lName};
+//   return ratingsObj;
+// });
+// console.log("-- COMPOSER BY RATING --");
+// console.log("Rating: " + composers.rating);
+// console.log("Composer: " + composers.lastName);
+
+// console.log("")
+
+// console.log("-- COMPOSER BY GENRE --");
+// console.log("Genre: " + composers.genre );
+// console.log("Composer: " + composers.lastName);
