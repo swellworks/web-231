@@ -5,7 +5,7 @@
 ; Author: Perry Fulfs
 ; Date:   20 November 2020
 ; Modified By: Perry Fulfs
-; Using ES5 standards and building Array-Like Object collections
+; Object & Built-in objects using object properties with at least (2) errors  
 ===========================================
 */
 
