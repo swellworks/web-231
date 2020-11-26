@@ -68,7 +68,7 @@ var composers = [ // Create array-like objects of first/last name, genre, rating
   }
 ]
 
-composers.forEach(function(composer) { // Use a forEach funtion to iterate over the collection.
+composers.forEach(function(composer) { // Use a forEach function to iterate over the collection.
   console.log( // Output the results in order keyed in.
     "Last Name: " + composer.lastName + ", Genre: " + composer.genre + ", Rating: " + composer.rating
   );
