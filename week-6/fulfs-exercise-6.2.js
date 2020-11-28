@@ -11,7 +11,7 @@
 
 const header = require('../fulfs-header.js'); // added file from root directory
 
-console.log(header.display("Perry", "Fulfs", "Discussion 6.2")); //  content with actual name & assignment name
+console.log(header.display("Perry", "Fulfs", "Exercise 6.2")); //  content with actual name & assignment name
 
 console.log("\n") // adding a space between header & rest of code
 
