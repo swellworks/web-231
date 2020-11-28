@@ -35,16 +35,17 @@ try {
     // variables
     let a = 36
     let b = 3
-    const sum = a * b // created a simple multiplication to give wrong sum
+    const sum = a * b // created a simple multiplication string to give wrong sum
   
     // if statement
     if (sum != 136) throw 'Correct sum is not found.' // the sum is not correct & so throws out information.
   
     // output
-    console.log(sum)
+    console.log(sum) // output should be the sum of a * b
   } catch (err) {
-    console.log('You have not found sum: ' + err)
-  } finally {
-    console.log('Found the finally...')
+    console.log('You have not found sum: ' + err) // statement allows you to define a block of code to be executed, 
+    // if an error occurs in the try block
+  } finally {  //  statement lets you execute code, after try and catch, regardless of the result
+    console.log('Found the cause finally... end program.')
   }
   
