@@ -30,18 +30,22 @@ console.log("\n") // adding a space between header & rest of code
 
 
 // object
-const identity = {
-  num: 101
+const identity = { // add a variable name to property num/number string
+  num: 392097
 }
 
-const profession = {
-  job: 'Help Desk Support'
+const profession = { // add a variable name to property job
+  job: 'Entry Level Associate'
 }
 
-const person = {
-  firstName: "Bob",
-  lastName: "Jones"
+const person = { // add a variable name to property first/last name
+  firstName: "Janice",
+  lastName: "Lamb"
 }
 
-// output
-console.log('id: ' + identity.num + ', ' + 'name: ' + profession.job + ', ' + 'requester: ' + person.firstName + ' ' + person.lastName)
+// output all the objects into one concatenated string
+console.log('id: ' + identity.num + ', ' + 'name: ' + profession.job + ', ' +
+ 'requester: ' + person.firstName + ' ' + person.lastName);
+
+
+
