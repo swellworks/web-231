@@ -1,0 +1,71 @@
+<!-- 
+============================================
+; Title:  fulfs-assignment-7.4.html
+; Author: Perry Fulfs
+; Date:   6 December 2020
+; Modified By: Perry Fulfs
+; Description: Demonstrates the use of client-side inline JavaScript functions
+=========================================== 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>fulfs-assignment-7.4</title>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<h1 id="bar"></h1>
+
+<script>
+  document.getElementById("bar").innerHTML = "Computer Components";
+</script>
+
+<table class="paleBlueRows">
+  <tbody>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Functions</th>
+    </tr>
+  </thead>
+    <tr>
+      <td>1</td>
+      <td>Laptop</td>
+      <td>1,500.99</td>
+      <td><a href="javascript:alert('1. Laptop, 1,500.99');">EDIT</a> | <a href="javascript:alert('Are you sure?');" onclick="return confirm('Are you sure?')">DELETE</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Motherboard</td>
+      <td>35.70</td>
+      <td><a href="javascript:alert('2. Motherboard, 35.70');">EDIT</a>  | <a href="javascript:alert('Are you sure?');" onclick="return confirm('Are you sure?')">DELETE</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Monitor</td>
+      <td>174.99</td>
+      <td><a href="javascript:alert(3. Monitor, 174.99');">EDIT</a> | <a href="javascript:alert('Are you sure?');" onclick="return confirm('Are you sure?')">DELETE</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Mouse</td>
+      <td>13.99</td>
+      <td><a href="javascript:alert('4. Mouse, 13.99');">EDIT</a>  | <a href="javascript:alert('Are you sure?');" onclick="return confirm('Are you sure?')">DELETE</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Keyboard</td>
+      <td>14.50</td>
+      <td><a href="javascript:alert('5. Keyboard, 14.50');">EDIT</a>  | <a href="javascript:alert('Are you sure?');" onclick="return confirm('Are you sure?')">DELETE</a></td>
+    </tr>
+  </tbody>
+  </table>
+
+</body>
+</html>
