@@ -1,9 +1,13 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 table.paleBlueRows {
     font-family: "Times New Roman", Times, serif;
     border: 1px solid #D3D3D3;
     width: auto;
     height: 200px;
-    text-align: center;
+    text-align: left;
     border-collapse: collapse;
   }
   table.paleBlueRows td, table.paleBlueRows th {
@@ -30,3 +34,62 @@ table.paleBlueRows {
   table.paleBlueRows thead th:first-child {
     border-left: none;
   }
+
+/* ----- Week 8.1 ----- */
+
+  #greenBox { 
+    color: #fff;
+    margin: 10px;
+    padding: 15px; 
+    border: 3px solid gray; 
+    width:60px;
+  }
+/* ----- end for 8.1 Week 8  ----- */
+
+/* ----- Week 8.2 ----- */
+.conWid {
+  width: 100%;
+}
+
+  #fruits {
+    margin: 0 auto;
+    width: 15%;
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4c4eaf;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* ----- end for 8.2 Week 8  ----- */

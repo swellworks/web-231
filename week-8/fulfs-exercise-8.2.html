@@ -1,0 +1,73 @@
+<!-- 
+============================================
+; Title:  fulfs-discussion-8.1.html
+; Author: Perry Fulfs
+; Date:   10 December 2020
+; Modified By: Perry Fulfs
+; Description: dynamically create and manipulate HTML content based on some data collection
+=========================================== 
+-->
+
+<!-- 
+  Expected output: 
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>fulfs-exercise-8.2</title>
+
+  <!-- you will need to the href to point to your root directories css & jquery file -->
+  <link rel="stylesheet" href="../site.css">
+  <script src="../jquery-3.5.1.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style type="text/css">
+    ul {
+      list-style: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Navbar</a>
+    <a href="#news">Navbar 2</a>
+    <a href="#contact">Navbar 3</a>
+    <a href="#about">Navbar 4</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+<div class="conWid">
+
+  <div id="fruits">
+    <ul>
+      <li></li>
+    </ul>
+  </div>
+
+</div>
+<script>
+let fruits = [
+    [9, 'Mango'],
+    [1, 'Guava'],
+    [2, 'Pineapple'],
+    [3, 'Peach'],
+    [7, 'Passionfruit']
+];
+
+  var out = "<h2>Fruits List</h2><ul>";
+  for (var x = 0; x < fruits.length; x++) {
+      out += "<li>" + fruits[x] + "</li>";
+  }
+  out += "</ul>";
+
+  document.getElementById('fruits').innerHTML = out;
+</script>
+
+</body>
+</html>
