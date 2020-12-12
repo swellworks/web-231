@@ -1,0 +1,105 @@
+<!-- 
+============================================
+; Title:  fulfs-discussion-8.1.html
+; Author: Perry Fulfs
+; Date:   11 December 2020
+; Modified By: Perry Fulfs
+; Description: dynamically create and manipulate HTML content based on some data collection
+=========================================== 
+-->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+ 
+   <title>fulfs-exercise-8.3</title>
+ 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- you will need to the href to point to your root directories css file -->
+   <link rel="stylesheet" href="../site.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+ 
+ </head>
+ <body>
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Navbar</a>
+    <a href="#news">Navbar 2</a>
+    <a href="#contact">Navbar 3</a>
+    <a href="#about">Navbar 4</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <h1>Hey, It's a Paragraph.</h1>
+      <p>
+        Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+      </p>
+      
+      <button type="button" class="button">Toggle</button>
+    </div>
+    <div class="column">
+      <table class="paleBlueRows">
+        <tbody>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+          <tr>
+            <td id="targetId1">1</td>
+            <td>Mango</td>
+          </tr>
+          <tr>
+            <td id="targetId2">2</td>
+            <td>Guava</td>
+          </tr>
+          <tr>
+            <td id="targetId3">3</td>
+            <td>Pineapple</td>
+          </tr>
+          <tr>
+            <td id="targetId4">4</td>
+            <td>Peach</td>
+          </tr>
+          <tr>
+            <td id="targetId5">5</td>
+            <td>Passionfruit</td>
+          </tr>
+        </tbody>
+        </table>
+    </div>
+  </div>
+
+ <script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+
+
+$( "#targetId1" ).click(function() {
+  alert( "Mango" );
+});
+$( "#targetId2" ).click(function() {
+  alert( "Guava" );
+});
+$( "#targetId3" ).click(function() {
+  alert( "Pineapple" );
+});
+$( "#targetId4" ).click(function() {
+  alert( "Peach" );
+});
+$( "#targetId5" ).click(function() {
+  alert( "Passionfruit" );
+});
+ </script>
+ 
+ </body>
+ </html>
