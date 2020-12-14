@@ -1,0 +1,148 @@
+<!-- 
+============================================
+; Title:  fulfs-assignment-8.1.html
+; Author: Perry Fulfs
+; Date:   13 December 2020
+; Modified By: Perry Fulfs
+; Description: putting it all together
+=========================================== 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>fulfs-assignment-8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="../site.css">
+
+</head>
+<body>
+<h1>fulfs-assignment-8.4</h1>
+
+<table id="empTbl" class="paleBlueRows">
+    <thead>
+    <tr>
+    <th>Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Title</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>003467</td>
+    <td>Daniel</td>
+    <td>Riviera</td>
+    <td>Supervisor</td>
+    </tr>
+    <tr>
+    <td>004589</td>
+    <td>Jennie</td>
+    <td>Lea</td>
+    <td>Asst Supervisor</td>
+    </tr>
+    <tr>
+    <td>008673</td>
+    <td>Doug</td>
+    <td>Giblets</td>
+    <td>Floor Manager</td>
+    </tr>
+    <tr>
+    <td>002563</td>
+    <td>Ned</td>
+    <td>Flanders</td>
+    <td>Dock Manager</td>
+    </tr>
+    <tr>
+    <td>008472</td>
+    <td>Melanie</td>
+    <td>Boards</td>
+    <td>Custodian</td>
+    </tr>
+    </tbody>
+    </table>
+    
+<script type="text/javascript">
+
+highlight_row();
+function highlight_row() {
+    var table = document.getElementById('empTbl');
+    var cells = table.getElementsByTagName('td');
+
+    for (var i = 0; i < cells.length; i++) {
+        // Take each cell
+        var cell = cells[i];
+        // do something on onclick event for cell
+        cell.onclick = function () {
+            // Get the row id where the cell exists
+            var rowId = this.parentNode.rowIndex;
+
+            var rowsNotSelected = table.getElementsByTagName('tr');
+            for (var row = 0; row < rowsNotSelected.length; row++) {
+                rowsNotSelected[row].style.backgroundColor = "";
+                rowsNotSelected[row].classList.remove('selected');
+            }
+            var rowSelected = table.getElementsByTagName('tr')[rowId];
+            rowSelected.style.backgroundColor = "yellow";
+            rowSelected.className += " selected";
+
+            alert(document.getElementById("empTbl").rows[0,1,2,3,4].innerHTML);
+        }
+    }
+
+}
+
+
+/** constructor employees
+ * Params: id, first name, last name, title
+ * Response: void
+ * Description: sets the id, name, & title of an object
+ */
+ function Emp(idEmp, first, last, titleEmp) {
+  this.id = idEmp;
+  this.firstName = first;
+  this.lastName = last;
+  this.title = titleEmp;
+}
+
+// array of five (5) employee objects
+let employees = [
+  new Emp("003467", "Daniel", "Riviera", "Supervisor"), 
+  new Emp("004589", "Jennie", "Lea", "Asst Supervisor"),
+  new Emp("008673", "Doug", "Giblets", "Floor Manager"), 
+  new Emp("002563", "Ned", "Flanders", "Dock Manager"),
+  new Emp("008472", "Melanie", "Boards", "Custodian")
+];
+
+/* 
+* output 
+1. 003467 Daniel Riviera Supervisor
+2. 004589 Jennie Lea Asst Supervisor
+3. 008673 Doug Giblets Floor Manager
+4. 002563 Ned Flanders Dock Manager
+5. 008472 Melanie Boards Custodian
+*/
+let index = 1
+for (let x = 0; x < employees.length; x++) {
+  console.log(index + '. ' + employees[x].id, employees[x].firstName, 
+  employees[x].lastName, employees[x].title) // Looping through an array of objects
+  index++
+}
+
+
+
+  // jQuery onClick event
+  // Don't remove this, just add your code to the body of the event (curly braces)
+//   $(function () {
+//     $("table tr").click(function () {
+
+//     })
+//   });
+</script>
+</body>
+</html>
